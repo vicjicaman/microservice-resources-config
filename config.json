@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "microservice-config": {
+      "url": "github.com:vicjicaman/microservice-config.git",
+      "version": "1.70.1-master"
+    }
+  },
+  "config": [{
+      "name": "SERVICE",
+      "value": "resources-service",
+      "type": "id"
+    },
+    {
+      "name": "DEPLOYMENT",
+      "value": "resources-deployment",
+      "type": "id"
+    },
+    {
+      "name": "BASE_ROUTE",
+      "value": "/resources",
+      "type": "path"
+    },
+    {
+      "name": "INTERNAL_PORT",
+      "value": 4000,
+      "type": "port"
+    },
+    {
+      "name": "INTERNAL_HOST",
+      "value": "${SERVICE}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    }
+  ]
+}

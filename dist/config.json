@@ -1,0 +1,22 @@
+{
+  "SERVICE": {
+    "value": "resources-service",
+    "type": "id"
+  },
+  "DEPLOYMENT": {
+    "value": "resources-deployment",
+    "type": "id"
+  },
+  "BASE_ROUTE": {
+    "value": "/resources",
+    "type": "path"
+  },
+  "INTERNAL_PORT": {
+    "value": 4000,
+    "type": "port"
+  },
+  "INTERNAL_HOST": {
+    "value": "resources-service.microservices-namespace",
+    "type": "host"
+  }
+}
