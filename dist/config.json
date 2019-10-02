@@ -1,22 +1,50 @@
 {
-  "SERVICE": {
-    "value": "resources-service",
-    "type": "id"
-  },
-  "DEPLOYMENT": {
-    "value": "resources-deployment",
-    "type": "id"
-  },
-  "BASE_ROUTE": {
+  "RESOURCES_BASE_ROUTE": {
     "value": "/resources",
     "type": "path"
   },
-  "INTERNAL_PORT": {
-    "value": 4000,
+  "WEB_SERVICE_NAME": {
+    "value": "resources-web-service",
+    "type": "id"
+  },
+  "WEB_INTERNAL_PORT": {
+    "value": 3000,
     "type": "port"
   },
-  "INTERNAL_HOST": {
-    "value": "resources-service.microservices-namespace",
+  "WEB_BASE_ROUTE": {
+    "value": "/resources",
+    "type": "path"
+  },
+  "DATA_SERVICE_NAME": {
+    "value": "resources-data-service",
+    "type": "id"
+  },
+  "DATA_INTERNAL_HOST": {
+    "value": "resources-data-service.microservices-namespace",
     "type": "host"
+  },
+  "DATA_INTERNAL_PORT": {
+    "value": 27017,
+    "type": "port"
+  },
+  "DATA_BASE_ROUTE": {
+    "value": "/resources",
+    "type": "route"
+  },
+  "DATA_INTERNAL_URL": {
+    "value": "http://resources-data-service.microservices-namespace:27017/resources",
+    "type": "url"
+  },
+  "CACHE_SERVICE_NAME": {
+    "value": "resources-cache-service",
+    "type": "id"
+  },
+  "CACHE_INTERNAL_HOST": {
+    "value": "resources-cache-service.microservices-namespace",
+    "type": "host"
+  },
+  "CACHE_INTERNAL_PORT": {
+    "value": 6379,
+    "type": "port"
   }
 }

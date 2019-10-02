@@ -2,33 +2,69 @@
   "dependencies": {
     "microservice-config": {
       "url": "github.com:vicjicaman/microservice-config.git",
-      "version": "1.70.1-master"
+      "version": "file:./../microservice-config"
     }
   },
-  "config": [{
-      "name": "SERVICE",
-      "value": "resources-service",
-      "type": "id"
-    },
+  "config": [
     {
-      "name": "DEPLOYMENT",
-      "value": "resources-deployment",
-      "type": "id"
-    },
-    {
-      "name": "BASE_ROUTE",
+      "name": "RESOURCES_BASE_ROUTE",
       "value": "/resources",
       "type": "path"
     },
     {
-      "name": "INTERNAL_PORT",
-      "value": 4000,
+      "name": "WEB_SERVICE_NAME",
+      "value": "resources-web-service",
+      "type": "id"
+    },
+    {
+      "name": "WEB_INTERNAL_PORT",
+      "value": 3000,
       "type": "port"
     },
     {
-      "name": "INTERNAL_HOST",
-      "value": "${SERVICE}.${NAMESPACE@microservice-config}",
+      "name": "WEB_BASE_ROUTE",
+      "value": "${RESOURCES_BASE_ROUTE}",
+      "type": "path"
+    },
+    {
+      "name": "DATA_SERVICE_NAME",
+      "value": "resources-data-service",
+      "type": "id"
+    },
+    {
+      "name": "DATA_INTERNAL_HOST",
+      "value": "${DATA_SERVICE_NAME}.${NAMESPACE@microservice-config}",
       "type": "host"
+    },
+    {
+      "name": "DATA_INTERNAL_PORT",
+      "value": 27017,
+      "type": "port"
+    },
+    {
+      "name": "DATA_BASE_ROUTE",
+      "value": "/resources",
+      "type": "route"
+    },
+    {
+      "name": "DATA_INTERNAL_URL",
+      "value": "${INTERNAL_PROTOCOL@microservice-config}://${DATA_INTERNAL_HOST}:${DATA_INTERNAL_PORT}${DATA_BASE_ROUTE}",
+      "type": "url"
+    },
+    {
+      "name": "CACHE_SERVICE_NAME",
+      "value": "resources-cache-service",
+      "type": "id"
+    },
+    {
+      "name": "CACHE_INTERNAL_HOST",
+      "value": "${CACHE_SERVICE_NAME}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "CACHE_INTERNAL_PORT",
+      "value": 6379,
+      "type": "port"
     }
   ]
 }
