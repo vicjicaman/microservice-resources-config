@@ -1,4 +1,8 @@
 {
+  "CACHE_SECRET_NAME": {
+    "value": "resources-cache-secret",
+    "type": null
+  },
   "RESOURCES_BASE_ROUTE": {
     "value": "/resources",
     "type": "path"

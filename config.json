@@ -7,6 +7,10 @@
   },
   "config": [
     {
+      "name": "CACHE_SECRET_NAME",
+      "value": "resources-cache-secret"
+    },
+    {
       "name": "RESOURCES_BASE_ROUTE",
       "value": "/resources",
       "type": "path"
