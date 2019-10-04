@@ -52,7 +52,7 @@
     },
     {
       "name": "DATA_INTERNAL_URL",
-      "value": "${INTERNAL_PROTOCOL@microservice-config}://${DATA_INTERNAL_HOST}:${DATA_INTERNAL_PORT}${DATA_BASE_ROUTE}",
+      "value": "${DATA_INTERNAL_HOST}:${DATA_INTERNAL_PORT}${DATA_BASE_ROUTE}",
       "type": "url"
     },
     {
