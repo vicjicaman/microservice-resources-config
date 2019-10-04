@@ -36,7 +36,7 @@
     "type": "route"
   },
   "DATA_INTERNAL_URL": {
-    "value": "http://resources-data-service.microservices-namespace:27017/resources",
+    "value": "resources-data-service.microservices-namespace:27017/resources",
     "type": "url"
   },
   "CACHE_SERVICE_NAME": {
