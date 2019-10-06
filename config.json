@@ -69,6 +69,45 @@
       "name": "CACHE_INTERNAL_PORT",
       "value": 6379,
       "type": "port"
+    },
+    {
+      "name": "QUEUE_SERVICE_NAME",
+      "value": "resources-queue-service",
+      "type": "id"
+    },
+    {
+      "name": "QUEUE_INTERNAL_HOST",
+      "value": "${QUEUE_SERVICE_NAME}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "QUEUE_INTERNAL_PORT",
+      "value": 5672,
+      "type": "port"
+    },
+    {
+      "name": "QUEUE_INTERNAL_URL",
+      "value": "${QUEUE_INTERNAL_HOST}:${QUEUE_INTERNAL_PORT}",
+      "type": "url"
+    },
+    {
+      "name": "QUEUE_MGR_SERVICE_NAME",
+      "value": "resources-queue-management-service",
+      "type": "id"
+    },
+    {
+      "name": "QUEUE_MGR_INTERNAL_HOST",
+      "value": "${QUEUE_MGR_SERVICE_NAME}.${NAMESPACE@microservice-config}",
+      "type": "host"
+    },
+    {
+      "name": "QUEUE_MGR_INTERNAL_PORT",
+      "value": 15672,
+      "type": "port"
+    },
+    {
+      "name": "QUEUE_SECRET_NAME",
+      "value": "resources-queue-secret"
     }
   ]
 }
