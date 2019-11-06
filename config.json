@@ -2,7 +2,7 @@
   "dependencies": {
     "microservice-config": {
       "url": "github.com:vicjicaman/microservice-config.git",
-      "version": "1.70.2-master"
+      "version": "file:./../microservice-config"
     }
   },
   "config": [
@@ -30,7 +30,7 @@
     },
     {
       "name": "WEB_INTERNAL_PORT",
-      "value": 3000,
+      "value": 80,
       "type": "port"
     },
     {

@@ -20,7 +20,7 @@
     "type": "id"
   },
   "WEB_INTERNAL_PORT": {
-    "value": 3000,
+    "value": 80,
     "type": "port"
   },
   "WEB_BASE_ROUTE": {
@@ -32,7 +32,7 @@
     "type": "id"
   },
   "DATA_INTERNAL_HOST": {
-    "value": "resources-data-service.microservices-namespace",
+    "value": "resources-data-service.repoflow-blog-namespace",
     "type": "host"
   },
   "DATA_INTERNAL_PORT": {
@@ -44,7 +44,7 @@
     "type": "route"
   },
   "DATA_INTERNAL_URL": {
-    "value": "resources-data-service.microservices-namespace:27017",
+    "value": "resources-data-service.repoflow-blog-namespace:27017",
     "type": "url"
   },
   "CACHE_SERVICE_NAME": {
@@ -52,7 +52,7 @@
     "type": "id"
   },
   "CACHE_INTERNAL_HOST": {
-    "value": "resources-cache-service.microservices-namespace",
+    "value": "resources-cache-service.repoflow-blog-namespace",
     "type": "host"
   },
   "CACHE_INTERNAL_PORT": {
@@ -64,7 +64,7 @@
     "type": "id"
   },
   "QUEUE_INTERNAL_HOST": {
-    "value": "resources-queue-service.microservices-namespace",
+    "value": "resources-queue-service.repoflow-blog-namespace",
     "type": "host"
   },
   "QUEUE_INTERNAL_PORT": {
@@ -72,7 +72,7 @@
     "type": "port"
   },
   "QUEUE_INTERNAL_URL": {
-    "value": "resources-queue-service.microservices-namespace:5672",
+    "value": "resources-queue-service.repoflow-blog-namespace:5672",
     "type": "url"
   },
   "QUEUE_MGR_SERVICE_NAME": {
@@ -80,7 +80,7 @@
     "type": "id"
   },
   "QUEUE_MGR_INTERNAL_HOST": {
-    "value": "resources-queue-management-service.microservices-namespace",
+    "value": "resources-queue-management-service.repoflow-blog-namespace",
     "type": "host"
   },
   "QUEUE_MGR_INTERNAL_PORT": {
